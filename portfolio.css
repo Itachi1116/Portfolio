@@ -1,0 +1,309 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   color: white;
+   background: black;
+}
+
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   padding: 10px 5%;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 10;
+   background: transparent;
+}
+
+.logo {
+   position: relative;
+   font-size: 20px;
+   color: white;
+   text-decoration: none;
+   font-weight: 700px;
+}
+
+.logo:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background: black;
+   animation: showright 2s ease forwards;
+   animation-delay: .4s;
+}
+
+.navbar a {
+   position: relative;
+   font-size: 12px;
+   color: white;
+   text-decoration: none;
+   font-weight: 600px;
+   margin-left: 10px;
+   transition: 1.5s;
+}
+
+.navbar a:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background: black;
+   animation: showright 2s ease forwards;
+   animation-delay: 3.5s;
+   z-index: 5;
+}
+
+.navbar a:hover,
+.navbar a.active {
+   color: deepskyblue;
+}
+
+.home {
+   height: 100vh;
+   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5GdFUdyHKoF1i4buGk7HTl26EYSrNEhrhmQ&usqp=CAU") no-repeat;
+   background-size: 38vw;
+   background-position: 98% 50%;
+   display: flex;
+   align-items: center;
+   padding: 0 10%;
+}
+
+.homecontent {
+   max-width: 58vw;
+}
+
+.homecontent h1 {
+   position: relative;
+   font-size: 1.5em;
+   font-weight: 700px;
+}
+
+.homecontent h1:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background: black;
+   animation: showright 2s ease forwards;
+   animation-delay: .9s;
+}
+
+
+.homecontent h3 {
+   position: relative;
+   margin: 10px 0;
+   font-size: 1.2em;
+   font-weight: 700px;
+   color: deepskyblue;
+}
+
+.homecontent h3:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background: black;
+   animation: showright 2s ease forwards;
+   animation-delay: 1.4s;
+}
+
+.homecontent p {
+   position: relative;
+   font-size: 12px;
+   margin: 13px 0 13px;
+   line-height: 1.5;
+}
+
+.homecontent p:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background: black;
+   animation: showright 2s ease forwards;
+   animation-delay: 2s;
+}
+
+.homecontent .btnbox {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   width: 230px;
+   height: 40px;
+}
+
+.homecontent .btnbox:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background: black;
+   animation: showright 2s ease forwards;
+   animation-delay: 2.4s;
+   z-index: 4;
+}
+
+.btnbox a {
+   position: relative;
+   display: inline-flex;
+   width: 100px;
+   height: 100%;
+   background: deepskyblue;
+   border: 2px solid blue;
+   border-radius: 10px;
+   color: black;
+   text-decoration: none;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   overflow: hidden;
+   transition: .5s;
+}
+
+.btnbox a:hover {
+   color: white;
+}
+
+.btnbox a:nth-child(2) {
+   background: transparent;
+   color: white;
+}
+
+.btnbox a:nth-child(2):hover {
+   color: black;
+}
+
+.btnbox a:nth-child(2):before {
+   background: deepskyblue;
+}
+
+.btnbox a:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0%;
+   height: 100%;
+   background: black;
+   z-index: -1;
+   transition: .5s;
+}
+
+.btnbox a:hover:before {
+   width: 100%;
+}
+
+.homesci {
+   position: absolute;
+   bottom: 10px;
+   width: 150px;
+   height: 40px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.homesci:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background: black;
+   animation: showright 2s ease forwards;
+   animation-delay: 3s;
+   z-index: 5;
+}
+
+.homesci a {
+   position: relative;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   background: transparent;
+   border-radius: 50%;
+   border: 2px solid deepskyblue;
+   font-size: 20px;
+   color: deepskyblue;
+   text-decoration: none;
+   z-index: 2;
+   overflow: hidden;
+   transition: .5s;
+}
+
+.homesci a:hover {
+   color: white;
+}
+
+.homesci a:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0%;
+   height: 100%;
+   background: deepskyblue;
+   z-index: -2;
+   transition: .5s;
+}
+
+.homesci a:hover:before {
+   width: 100%;
+}
+
+.homehover {
+   position: absolute;
+   top: 0;
+   right: 10px;
+   height: 100%;
+   width: 30vw;
+   background: transparent;
+   transition: 3s;
+}
+
+.homehover:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background: black;
+   animation: showright 2s ease forwards;
+   animation-delay: 3.5s;
+   z-index: 5;
+}
+
+.homehover:hover {
+   background: black;
+   opacity: .8;
+}
+
+@keyframes showright {
+   100% {
+      width: 0%;
+   }
+}
